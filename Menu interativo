@@ -14,6 +14,13 @@
     font-family: 'Poppins', sans-serif;
     margin:0;
     padding: 0;
+    background-position: top;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: contain;
+
 }
 .container{
     align-items: center;
@@ -109,10 +116,14 @@ ul li:hover .text{
     transition-delay: 0.25;
 }
 
+
+
 </style>
-<body>
+<body style="background-image: url(olivers.jpg)" >
+    
     <div class="container">
         <ul>
+            
             <li style="--i: #e66f8e; --j:#844c64">
                 <span class="icon">
                     <ion-icon name="home-outline"></ion-icon>
@@ -170,5 +181,6 @@ width:200px">
 </body>
 
 </head>
+
 
 </html>
