@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family:'Noto Sans', sans-serif ;
+}
+/* essa parte chama o body e diz que qualquer estilo dentro
+desse elemento vai servir para todos os elementos dentro do body*/
+/*body *{
+    box-sizing: border-box;
+}*/
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display:flex;
+    /* o flex faz com que as coisas fiquem lado a lado*/
+    justify-content: center;
+    /* justify-content organiza as coisas no eixo x*/
+    align-items: center;
+    /*align-items organiza os elementos no eixo y*/
+}
+
+.left-login{
+    width: 50vh;
+    height: 100vh;
+    display:flex;
+    /* o flex faz com que as coisas fiquem lado a lado*/
+    justify-content: center;
+    /* justify-content organiza as coisas no eixo x*/
+    align-items: center;
+    /*align-items organiza os elementos no eixo y*/
+    flex-direction: column;
+    /*para colocar uma coisa embaixo da outra*/
+}
+.left-login > h1{
+    font-size: 3vw;
+    color: #77ffc0;
+}
+
+.img{
+    width: 25vw;
+    height: fit-content;
+}
+
+.right-login{
+    width: 50vh;
+    height: 100vh;
+    display:flex;
+    /* o flex faz com que as coisas fiquem lado a lado*/
+    justify-content: center;
+    /* justify-content organiza as coisas no eixo x*/
+    align-items: center;
+    /*align-items organiza os elementos no eixo y*/
+}
+
+.card-login{
+    width: 70%;
+    display:flex;
+    /* o flex faz com que as coisas fiquem lado a lado*/
+    justify-content: center;
+    /* justify-content organiza as coisas no eixo x*/
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:#2f2841;
+    border-radius: 20px;
+    /*sombra do card*/
+    box-shadow: 0px 10px 40px #00000056;
+    /*primeiro valor se refere ao eixo x, ou seja, com o valor zero a 
+    sombra estará no centro, o segundo valor se refere à sombra estará 
+    para cima ou para baixo, com o valor de 10px a sombra estará indo 
+    para baixo. O terceiro valor é o blur e o quarto valor é a cor*/
+}
+
+.card-login >h1{
+    color: #00ff88;
+    font-weight: 800;
+    /*"grossura" da fonte, seria o bold*/
+    margin:0 ;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /*quando utilizamos o flex-direction as definições do align items
+    e do justify-content se invertem.
+    align-> eixo x
+    justify -> eixo y*/
+    margin: 10px 0px;
+    /*primeiro valor é eixo y e o segundo é eixo x*/
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius:10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow:0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.botao-login{
+    width: 100%;
+    padding: 16px 0px;
+    /*16 px no eixo y e 0 px no eixo x*/
+    margin: 25px;
+    border:none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    /*esse -12 é o spread (pesquisar)*/
+}
+
+/*enqaunto a tela tiver uma largura até 950px*/
+@media only screen and (max-widht: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+/*site responsivo para celular*/
+@media only screen and (max-widht:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login>h1{
+        display: none; /*oculta as coisas do html*/
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .img{
+        width: 50vh;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
