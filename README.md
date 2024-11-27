@@ -1,6 +1,4 @@
-Claro! Aqui está uma versão aprimorada do README: 
 
----
 
 # Telas Básicas em HTML e CSS
 
@@ -45,4 +43,3 @@ Sinta-se à vontade para contribuir com ideias ou melhorias! 😊
 
 --- 
 
-Caso você tenha algum ponto específico para adicionar ou ajustar, me avise!
